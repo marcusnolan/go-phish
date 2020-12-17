@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -11,61 +12,62 @@
 </head>
 
 <body>
-    <header>
-
+    <header> 
+ 
     </header>
-
-    <div class="container">
+        <p>Clicks: <a id="clicks">0</a></p>
+ 
+    <div class="container"> 
         <div class="row">
-            <div class="d-none d-md-block col-md-2 col-lg-3">
+            <div class="d-none d-md-block col-md-2 col-lg-3"> 
 
-            </div> 
+            </div>
             <div class="col-sm-12 col-md-8 col-lg-6 go-phish-game">
-                <div class="go-phish-card" data-framework="deceptive">
+                <div class="go-phish-card" data-framework="deceptive" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-deceptive.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="deceptive">
+                <div class="go-phish-card" data-framework="deceptive" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-deceptive.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="spear">
+                <div class="go-phish-card" data-framework="spear" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-spear.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="spear">
+                <div class="go-phish-card" data-framework="spear" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-spear.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="executive-fraud">
+                <div class="go-phish-card" data-framework="executive-fraud" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-executive-fraud.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="executive-fraud">
+                <div class="go-phish-card" data-framework="executive-fraud" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-executive-fraud.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="vishing">
+                <div class="go-phish-card" data-framework="vishing" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-vishing.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="vishing">
+                <div class="go-phish-card" data-framework="vishing" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-vishing.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="smishing">
+                <div class="go-phish-card" data-framework="smishing" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-smishing.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="smishing">
+                <div class="go-phish-card" data-framework="smishing" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-smishing.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="pharming">
+                <div class="go-phish-card" data-framework="pharming" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-pharming.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
-                <div class="go-phish-card" data-framework="pharming">
+                <div class="go-phish-card" data-framework="pharming" onclick="onClick()">
                     <img class="card-front" src="./assets/images/go-phish-pharming.jpg" alt="deceptive">
                     <img class="card-back" src="./assets/images/go-phish-back.jpg" alt="cyber-thief">
                 </div>
@@ -75,14 +77,15 @@
             </div>
         </div>
     </div>
-
+ 
     <footer>
 
     </footer>
     <script src="./assets/JS/game-script.js"></script>
+    <script src="./assets/JS/testing-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-</body>
+</body> 
 
 </html>
